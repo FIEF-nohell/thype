@@ -73,11 +73,11 @@ body {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(18, 18, 18);
 }
 
 .menu_items:hover {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(18,18,18);
     cursor: pointer;
 }
 
@@ -85,6 +85,25 @@ body {
     margin-left: 15%;
     font-size: 28px;
     padding: 0px 10px;
+    height: 85%;
+}
+
+.typing_stats{
+    margin-top: 8%;
+    text-align: center;
+    position: static;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+}
+
+.text_to_type{
+    margin-top: 9%;
+    margin-bottom: 0;
+    text-align: center;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
 }
 
 .stats_window {
