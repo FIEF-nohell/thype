@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DataService, Message } from '../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,16 +6,35 @@ import { DataService, Message } from '../services/data.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor(private data: DataService) {}
 
-  refresh(ev) {
-    setTimeout(() => {
-      ev.detail.complete();
-    }, 3000);
+  type_clicked: boolean = true;
+  stats_clicked: boolean = false;
+  settings_clicked: boolean = false;
+
+  main_page(){
+
   }
 
-  getMessages(): Message[] {
-    return this.data.getMessages();
+  type_option(){
+    console.log("type")
+    this.type_clicked = true;
+    this.stats_clicked = false;
+    this.settings_clicked = false;
   }
+
+  stats_option(){
+    console.log("stats")
+    this.type_clicked = false;
+    this.stats_clicked = true;
+    this.settings_clicked = false;
+  }
+
+  settings_option(){
+    console.log("settings")
+    this.type_clicked = false;
+    this.stats_clicked = false;
+    this.settings_clicked = true;
+  }
+
 
 }
